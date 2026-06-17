@@ -1,16 +1,53 @@
-# React + Vite
+# Video Portfolio — Pangerkumzuk Longkumer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cinematic personal portfolio built with **React + Vite + Tailwind CSS**, showcasing Pangerkumzuk Longkumer's work in full-stack development, cybersecurity, open-source contribution, and community management.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework:** React 18 + Vite
+- **Styling:** Tailwind CSS v4
+- **Animation:** AOS (Animate On Scroll) + Framer Motion
+- **Build tool:** Vite with HMR
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open [http://localhost:5173](http://localhost:5173) to view locally.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx       # Responsive navigation with scroll-aware styling
+│   ├── Hero.jsx         # Full-screen video hero with play/pause control
+│   ├── About.jsx        # ID-badge style about section with tech stack
+│   ├── Services.jsx     # Scroll-driven animated service cards
+│   ├── Contact.jsx      # Contact form + social links
+│   ├── Footer.jsx       # Footer with site credits
+│   └── Preloader.jsx    # Entry animation preloader
+├── assets/
+│   ├── hero video/      # Hero background video
+│   └── about/           # About section images
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## About the Developer
+
+**Pangerkumzuk Longkumer** is a cybersecurity professional and full-stack developer based in Kohima, Nagaland, India. He works on open-source tools, penetration testing research, Wikipedia content, and community-driven tech events.
+
+- GitHub: [@pangerlkr](https://github.com/pangerlkr)
+- Certifications: OSCP | GCP Labs | ISO 27001 Lead Auditor (pursuing)

@@ -9,7 +9,7 @@ const About = () => {
     <section className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-start">
         
-        {/* Left Side: ID Badge and Skills */}
+        {/* Left Side: ID Badge */}
         <div className="flex flex-col items-center w-full md:w-[350px] shrink-0 mt-12 md:mt-0">
           
           <div data-aos="drop-bounce" className="relative flex justify-center w-full">
@@ -28,9 +28,18 @@ const About = () => {
               <div className="w-full aspect-[3/4] overflow-hidden rounded-xl bg-gray-800 border-2 border-transparent">
                 <img 
                   src={stackImage} 
-                  alt="Profile" 
+                  alt="Pangerkumzuk Longkumer" 
                   className="w-full h-full object-cover"
                 />
+              </div>
+              {/* Badge Name Tag */}
+              <div className="mt-3 mb-2 text-center">
+                <p className="text-white text-xs font-black tracking-widest uppercase">Pangerkumzuk</p>
+                <p className="text-gray-400 text-[10px] tracking-widest uppercase">Longkumer</p>
+                <div className="mt-2 flex justify-center gap-1">
+                  <span className="bg-[#ff2a2a] text-white text-[8px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wide">OSCP</span>
+                  <span className="bg-gray-700 text-gray-200 text-[8px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wide">GCP</span>
+                </div>
               </div>
             </div>
           </div>
@@ -41,12 +50,20 @@ const About = () => {
         <div data-aos="fade-left" data-aos-delay="200" className="flex-1 text-white mt-8 md:mt-0 relative z-20">
           
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Hello!</h2>
-          <p className="text-lg font-bold mb-12 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Leeshark</span>, a passionate full-stack developer based in [Location], dedicated to crafting clean, functional, and highly scalable web applications.
+          <p className="text-lg font-bold mb-6 leading-relaxed max-w-3xl text-red-50">
+            I'm <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Pangerkumzuk Longkumer</span>, a cybersecurity professional and full-stack developer based in <span className="text-black font-black">Kohima, Nagaland, India</span>. I build open-source tools, conduct penetration testing research, manage technical communities, and contribute to Wikipedia.
           </p>
 
-          {/* Horizontal Skills Row (Transparent & Large) */}
-          <div className="flex items-center gap-10 mt-8">
+          {/* Credentials */}
+          <div className="flex flex-wrap gap-3 mb-10">
+            <span className="bg-black/30 border border-black/20 text-white text-xs font-bold px-4 py-2 rounded-full backdrop-blur-sm">OSCP Certified</span>
+            <span className="bg-black/30 border border-black/20 text-white text-xs font-bold px-4 py-2 rounded-full backdrop-blur-sm">GCP Labs</span>
+            <span className="bg-black/30 border border-black/20 text-white text-xs font-bold px-4 py-2 rounded-full backdrop-blur-sm">ISO 27001 (pursuing)</span>
+            <span className="bg-black/30 border border-black/20 text-white text-xs font-bold px-4 py-2 rounded-full backdrop-blur-sm">Wikipedia Editor</span>
+          </div>
+
+          {/* Tech Stack Icons */}
+          <div className="flex items-center gap-10 mt-4">
             <img 
               data-aos="zoom-in" data-aos-delay="300"
               src={reactImage} 

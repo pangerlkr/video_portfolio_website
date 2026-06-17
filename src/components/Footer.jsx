@@ -1,51 +1,38 @@
 import React from 'react';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-[#111111] text-[#d4d4d4] py-16 px-6 md:px-12 w-full font-mono text-[10px] md:text-xs tracking-widest flex flex-col justify-between min-h-[50vh]">
-      
-      {/* Top Row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 w-full font-medium">
-        <div className="flex flex-col gap-1">
-          <p>Cinematic & Creative Production</p>
-          <p>Lighting, Editing, Photo</p>
-          <p>Motion Graphics</p>
-        </div>
+    <footer className="bg-black border-t border-white/10 text-white py-10 px-6 md:px-12 font-sans">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         
-        <div className="flex flex-col gap-1 md:items-center">
-          <p>5+ years of experience</p>
-          <a href="#work" className="underline hover:text-white transition-colors mt-1 underline-offset-4 decoration-1">View Work</a>
+        {/* Brand */}
+        <div className="flex flex-col items-center md:items-start gap-1">
+          <span className="text-sm font-black tracking-widest uppercase text-white">
+            Pangerkumzuk Longkumer
+          </span>
+          <span className="text-white/40 text-xs">Cybersecurity · Full-Stack · Open Source</span>
         </div>
-        
-        <div className="flex flex-col gap-1 md:items-end">
-          <p>Worldwide Available</p>
-          <p>{new Date().getFullYear()}</p>
-        </div>
-      </div>
 
-      {/* Middle Huge Text */}
-      <div className="w-full flex justify-center items-center py-20 md:py-24 overflow-hidden">
-        <h2 className="text-[18vw] md:text-[16vw] leading-none font-sans font-bold tracking-tighter lowercase select-none text-[#f4f4f4] w-full text-center">
-          leeshark
-        </h2>
-      </div>
+        {/* Nav links */}
+        <nav aria-label="Footer navigation">
+          <ul className="flex flex-wrap justify-center gap-6 text-xs font-semibold text-white/50 uppercase tracking-widest">
+            <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#services" className="hover:text-white transition-colors">Work</a></li>
+            <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
+            <li>
+              <a href="https://github.com/pangerlkr" target="_blank" rel="noopener noreferrer" className="hover:text-[#ff2a2a] transition-colors">
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      {/* Bottom Row */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 w-full items-end font-medium">
-        <div className="flex flex-col gap-6">
-          <a href="#contact" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 font-bold">Contact</a>
-          <p className="text-white/60 font-mono text-[9px] md:text-[10px]">
-            &copy; {new Date().getFullYear()} Leeshark Studio | Built with React
-          </p>
-        </div>
-        
-        <div className="flex flex-col gap-1 md:items-center">
-          <a href="mailto:hello@leeshark.com" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 lowercase">hello@leeshark.com</a>
-        </div>
-        
-        <div className="flex flex-col gap-1 md:items-end">
-          <a href="#" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">Privacy Policy</a>
-        </div>
+        {/* Copyright */}
+        <p className="text-white/30 text-xs text-center md:text-right">
+          &copy; {currentYear} Pangerkumzuk Longkumer. All rights reserved.
+        </p>
       </div>
     </footer>
   );
