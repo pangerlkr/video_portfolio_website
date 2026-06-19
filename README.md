@@ -1,4 +1,4 @@
-# Video Portfolio — Pangerkumzuk Longkumer
+# Video Portfolio - Pangerkumzuk Longkumer
 
 > A cinematic personal portfolio showcasing full-stack development, cybersecurity research, open-source contributions, and community leadership.
 
